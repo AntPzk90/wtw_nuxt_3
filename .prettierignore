@@ -1,0 +1,4 @@
+markup/
+package-lock.json
+# lowdb rewrites this file on every POST, Prettier formatting would only add noise
+mock-server/db.json

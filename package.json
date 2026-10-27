@@ -1,0 +1,38 @@
+{
+  "name": "wtw_nuxt",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "mock": "node mock-server/server.mjs",
+    "lint": "npm run lint:js && npm run lint:style && npm run format:check",
+    "lint:js": "eslint .",
+    "lint:style": "stylelint \"**/*.{css,vue}\"",
+    "lint:fix": "eslint . --fix && stylelint \"**/*.{css,vue}\" --fix && prettier --write .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "dependencies": {
+    "@pinia/nuxt": "^1.0.3",
+    "nuxt": "^4.6.2",
+    "pinia": "^4.1.0",
+    "vue": "^3.5.43",
+    "vue-router": "^5.4.0",
+    "vue-sonner": "^2.0.9"
+  },
+  "devDependencies": {
+    "@nuxt/eslint": "^1.17.0",
+    "eslint": "^10.13.0",
+    "eslint-config-prettier": "^10.1.8",
+    "json-server": "^1.0.0-beta.15",
+    "lowdb": "^7.0.1",
+    "postcss-html": "^2.0.0",
+    "prettier": "^3.9.10",
+    "stylelint": "^17.16.0",
+    "stylelint-config-standard": "^40.0.0"
+  }
+}
